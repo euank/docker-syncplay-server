@@ -1,7 +1,7 @@
 {
   "family": "syncplay",
   "containerDefinitions": [{
-    "image": "euank/docker-syncplay-server",
+    "image": "euank/syncplay-server",
     "name": "app",
     "memory": 50,
     "portMappings": [{
@@ -9,9 +9,9 @@
       "containerPort": 8999
     }],
     "environment": [{
-      "name": "_ECS_R53_DNS", "value": "syncplay.euank.com"
+      "name": "_ECS_R53_DNS", "value": "syncplay.mydomain.tld"
     }, {
-      "name": "SALT", "value": "bp7YxHLlOc"
+      "name": "SALT", "value": ""
     }]
   }]
 }
