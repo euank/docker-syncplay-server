@@ -14,7 +14,7 @@ if [ -n "$ISOLATE" ]; then
   args="$args --isolate-rooms"
 fi
 
-if [ -n "$MOTD"]; then
+if [ -n "$MOTD" ]; then
   echo "$MOTD" >> /motd
   args="$args --motd-file=/motd"
 fi
